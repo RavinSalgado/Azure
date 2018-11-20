@@ -1,0 +1,20 @@
+{
+  "Name": "<Custom-Role-Name>",
+  "Id": null,
+  "IsCustom": true,
+  "Description": "Allows for read, write and delete access to Azure File Share",
+  "Actions": [
+    "*"
+  ],
+  "NotActions": [
+      "Microsoft.Authorization/*/Delete",
+    "Microsoft.Authorization/*/Write",
+    "Microsoft.Authorization/elevateAccess/Action"
+  ],
+  "DataActions": [
+    "*"
+  ],
+  "AssignableScopes": [
+        "/subscriptions/<Subscription-ID>"
+  ]
+}
